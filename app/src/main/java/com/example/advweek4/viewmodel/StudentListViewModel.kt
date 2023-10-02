@@ -13,8 +13,8 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.util.ArrayList
 
-class StudentListViewModel(app: Application) : AndroidViewModel(app) {
-    val students = MutableLiveData<ArrayList<Student>>()
+class StudentListViewModel(application: Application) : AndroidViewModel(application) {
+    val students     = MutableLiveData<ArrayList<Student>>()
     val studentsLoading = MutableLiveData<Boolean>()
     val studentsLoadError = MutableLiveData<Boolean>()
 
